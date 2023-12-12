@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+    <title>Embed URL Parser</title>
+</head>
+<body>
+<div class="container">
+    <h1>Embed URL Parser</h1>
+    <form th:action="@{/process}" method="post">
+        <label for="jsonInput">Enter JSON string:</label>
+        <textarea id="jsonInput" name="jsonString" rows="5" cols="50"></textarea>
+        <br>
+        <button type="submit">Process</button>
+    </form>
+</div>
+</body>
+</html>

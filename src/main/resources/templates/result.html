@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
+    <title>Result - Embed URL Parser</title>
+</head>
+<body>
+<div class="container">
+    <h1>Result</h1>
+
+    <!-- Video Player -->
+    <video width="640" height="360" controls>
+        <source th:src="${url720p}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Download Link -->
+    <a th:href="${url720p}" target="_blank" download>Download</a>
+</div>
+</body>
+</html>
