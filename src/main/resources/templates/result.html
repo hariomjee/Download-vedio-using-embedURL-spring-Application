@@ -16,8 +16,10 @@
         Your browser does not support the video tag.
     </video>
 
-    <!-- Download Link -->
-    <a th:href="${url720p}" target="_blank" download>Download</a>
+    <!-- Download Button -->
+    <a id="downloadLink" th:href="${url720p}" download="video.mp4">
+        <button class="download-button">Download Video</button>
+    </a>
 </div>
 </body>
 </html>
